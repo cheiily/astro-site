@@ -17,10 +17,12 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    date: z.coerce.date(),
+    order: z.number(),
+    status: z.string().optional(),
+    entry_type: z.string(),
     draft: z.boolean().optional(),
-    demoURL: z.string().optional(),
-    repoURL: z.string().optional(),
+    urls: z.array(z.string()).optional(),
+    url_names: z.array(z.string()).optional()
   }),
 });
 

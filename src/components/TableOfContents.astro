@@ -29,6 +29,7 @@ function buildToc(headings: Heading[]) {
 
 <details
   open
+  id="toc"
   class="animate rounded-lg border border-black/15 dark:border-white/20"
 >
   <summary>Table of Contents</summary>
@@ -40,6 +41,14 @@ function buildToc(headings: Heading[]) {
 </details>
 
 <style>
+/* VERSION PINNED TO THE RIGHT */
+/*
+details#toc {
+	position:fixed;
+	right: 25px;
+}
+*/
+
   summary {
     @apply cursor-pointer rounded-t-lg px-3 py-1.5 font-medium transition-colors;
   }
