@@ -5,6 +5,10 @@ toc: true
 order: 3
 status: "Upkeep"
 entry_type: "project"
+urls:
+    - https://github.com/cheiily/HeartBlazer
+url_names:
+    - repo
 ---
 
 -> Minimal discord chatbot application providing utility for a local FGC server. \

@@ -3,8 +3,12 @@ title: 'Kosmische Kriege'
 description: "Private GameMaker gamejam (2024) submission"
 toc: true
 entry_type: "game"
-status: ""
+status: "v1.0.3"
 order: 6
+urls:
+    - https://cheily.itch.io/kosmischekriege
+url_names:
+    - itch
 ---
 
 ## /links

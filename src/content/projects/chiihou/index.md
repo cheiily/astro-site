@@ -5,21 +5,13 @@ description: "Personal landing website made with Hugo"
 order: 1
 toc: true
 entry_type: "project"
-date: "01/01/2024"
 urls:
     - "/"
     - "https://example.com"
 url_names:
     - demo
     - repo
-demoURL: "/"
-repoURL: "https://github.com/cheiily/hugo-site" 
 ---
-
-## /links
-
-- [this website](/)
-- https://github.com/cheiily/hugo-site
 
 ## /motivation
 

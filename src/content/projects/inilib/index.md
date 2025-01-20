@@ -5,6 +5,10 @@ toc: true
 status: "Closed"
 entry_type: "project"
 order: 5
+urls:
+    - https://github.com/cheiily/IniLib
+url_names:
+    - repo
 ---
 
 ## /links

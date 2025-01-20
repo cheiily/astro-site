@@ -5,6 +5,10 @@ toc: true
 entry_type: "game"
 status: "Finalized"
 order: 8
+urls:
+    - https://bubble-bliss-games.itch.io/scrub-squad
+url_names:
+    - itch
 ---
 
 ## /links

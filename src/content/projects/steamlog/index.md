@@ -5,6 +5,10 @@ toc: true
 status: "Closed"
 entry_type: "project"
 order: 9
+urls:
+    - https://github.com/cheiily/SteamLog_Puller
+url_names:
+    - repo
 ---
 
 Background CLI application frequently polling the Steam API to create a local play history for further analysis.

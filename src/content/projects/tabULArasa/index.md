@@ -5,6 +5,10 @@ toc: true
 entry_type: "game"
 status: "Finalized"
 order: 10
+urls:
+    - https://armezdon.itch.io/tab-ula-rasa
+url_names:
+    - itch
 ---
 
 ## /links

@@ -5,11 +5,11 @@ toc: true
 order: 2
 status: "v2.0.3"
 entry_type: "project"
+urls:
+    - https://github.com/cheiily/DustGrain
+url_names:
+    - repo
 ---
-
-## /links
-
-- https://github.com/cheiily/DustGrain
 
 ## /motivation
 

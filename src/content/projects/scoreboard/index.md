@@ -5,6 +5,10 @@ toc: true
 status: "v0.2"
 entry_type: "project"
 order: 7
+urls:
+	- https://github.com/cheiily/FGC_Scoreboard_filegen
+url_names:
+	- repo
 ---
 
 Note: My focus was temporarily stolen away by [DustGrain](/projects/dustgrain), but this should see some action in the coming months again.
