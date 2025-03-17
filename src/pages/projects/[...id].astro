@@ -34,8 +34,10 @@ const { Content, headings } = await render(project);
         &bull;
       </h1>
       <h2 class="text-2xl text-black dark:text-white" style="display:inline-block">
-      	({project.data.status})
+      	{project.data.status}
       </h2>
+      <br/>
+      {project.data.description}
       <br/>
       <nav class="flex gap-1">
       {project.data.urls?.map((lnk, idx, arr) => (
@@ -47,6 +49,7 @@ const { Content, headings } = await render(project);
       </nav>
     </div>
     <TableOfContents headings={headings} />
+    <!--<hr/>-->
     <article class="animate">
       <Content />
     </article>

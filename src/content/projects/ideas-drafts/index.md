@@ -3,7 +3,7 @@ title: 'ideas drafts'
 description: ""
 toc: true
 draft: true
-entry_type: "project"
+entry_type: "draft"
 status: ""
 order: 4 
 ---

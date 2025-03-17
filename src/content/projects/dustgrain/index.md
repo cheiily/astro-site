@@ -1,6 +1,6 @@
 ---
-title: 'dustgrain'
-description: "Dustloop scraper util with CLI interface"
+title: 'Dustgrain'
+description: "Dustloop scraper util with CLI interface."
 toc: true
 order: 2
 status: "v2.0.3"
@@ -11,18 +11,18 @@ url_names:
     - repo
 ---
 
-## /motivation
-
-While hanging around the FGC and then developing [HeartBlazer](/projects/heartblazer), I've always been thinking how cool it would be to have a quick reference lookup whenever I wanted to check some frame data or the like. The caveat was that there was no decent tool available out there. I've also been looking at writing some basic project to kickstart the kotlin learning.\
-So I took the opportunity that Java interoperates with Kotlin, and decided to make one myself.
-
-## /technologies
+## Technologies
 
 - Kotlin
 	- Clikt
 	- Jsoup
 
-## /implementation
+## Motivation
+
+While hanging around the FGC and then developing [HeartBlazer](/projects/heartblazer), I've always been thinking how cool it would be to have a quick reference lookup whenever I wanted to check some frame data or the like. The caveat was that there was no decent tool available out there. I've also been looking at writing some basic project to kickstart the kotlin learning.\
+So I took the opportunity that Java interoperates with Kotlin, and decided to make one myself.
+
+## Implementation
 
 I started with the idea that it was going to be just a submodule for the bot but while developing I diverged to also make it a CLI tool, just because I'd been really wanting to do put that into any project for a while, but none were quite fitting before this. 
 
@@ -32,7 +32,7 @@ The tool, however, is suited to pull data from multiple wikis as it navigates th
 
 For the CLI interface, I decided to use Clikt as it was the most popular actively-maintained argument parser available. Its structure proved rather surprising to me, as it was more of a full CLI-tool framework than just simple parser, but nevertheless I grew to like it.
 
-## /conclusions
+## Conclusion
 
 This project while very simple in essence allowed me to get a basic grasp on Kotlin's semantics and workings, as well as the JVM interoperability. I've also learnt about the structure of a CLI tool, which was pretty satisfying.
 

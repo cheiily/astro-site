@@ -14,8 +14,14 @@ const blog = (await getCollection("blog"))
 
 const projects: CollectionEntry<"projects">[] = (
   await getCollection("projects")
-)
-  .filter((project) => !project.data.draft)
+).filter((project) => !project.data.draft)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE);
+
+const games: CollectionEntry<"projects">[] = (
+	await getCollection("projects")
+).filter((project) => !project.data.draft)
+	.filter((project) => project.data.entry_type == "game")
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE);
 ---
@@ -23,63 +29,84 @@ const projects: CollectionEntry<"projects">[] = (
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <aside data-pagefind-ignore>
-      <h1 class="font-semibold text-black dark:text-white">
-        Introducing Astro Micro 🔬
-      </h1>
       <div class="space-y-16">
         <section>
           <article class="space-y-4">
-            <span>
-              <p>
-                Astro Micro is an accessible theme for <Link
-                  href="https://astro.build/">Astro</Link
-                >. It's a fork of
-                <Link href="https://github.com/markhorn-dev">
-                  Mark Horn's
-                </Link> popular theme <Link
-                  href="https://astro.build/themes/details/astronano/"
-                  >Astro Nano</Link
-                >. Like Nano, Micro comes with zero frameworks installed.
-              </p>
-              <p>
-                Micro adds features like <Link href="https://pagefind.app/"
-                  >Pagefind</Link
-                > for search, <Link href="https://giscus.app">Giscus</Link> for comments,
-                and more. For a full list of changes, see this <Link
-                  href="/blog/00-micro-changelog">blog post</Link
-                >.
-              </p>
-            </span>
-            <span class="animate">
-              <p>
-                Micro still comes with everything great about Nano — full type
-                safety, a sitemap, an RSS feed, and Markdown + MDX support.
-                Styled with TailwindCSS and preconfigured with system, light,
-                and dark themes.
-              </p>
-              <p>
-                Visit
-                <Link href="https://github.com/trevortylerlee/astro-micro">
-                  Astro Micro on GitHub
-                </Link>
-                to fork the repository to get started.
-              </p>
-            </span>
+	<p>
+				Hi! My name is Grzegorz but online I often go by the handle 'cheily'.<br/>
+	I'm a student at the Technical University of Lodz (Politechnika Łódzka), with Applied Computer Science as my major, currently enrolled in a Masters' programme.
+	</p>
+
+	<p>
+	Programming has been my interest all the way back since middle school, when I introduced myself to C++ and since then I've always been hacking something up in my free time, as a hobby - whether it be a custom Discord bot with JDA, a simple text-based Game of Life simulation or a minimal CLI flashcards tool.
+	<br>
+	</p>
+
+	<p>
+	<b>On this website you will find most of my personal projects</b>, regardless of their state - some were finished and some were dropped. I believe it's important to learn from failures and be proud of the attempts. They were all started after I enlisted at the university. For each there is a short summary on the taxonomy page and an extended description in their own article.
+	</p>
+
+<!--
+	<hr/>
+	<p>
+	The course has had me use a number of different languages and frameworks, which in turn only increased my curiosity to try out more, that were not required in the curriculum. All in all they include:
+	<style>
+	  table {  text-align: center;  }
+	  td { text-align: center; }
+	  th {  display: none;  }
+	</style>
+	<table>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Java <br> JavaFX, JDA4/5, logback, MySQL</td>
+			<td>Kotlin <br> Clikt, Jsoup</td>
+		</tr>
+		<tr>
+			<td>C# <br> .Net, .Net Framework</td>
+			<td>C++ <br> Boost, Dear ImGui, spdlog</td>
+		</tr>
+		<tr>
+			<td>Python <br> Matplot, Pandas, Numpy</td>
+			<td>Javascript, CSS <br> DOM, XML, Schema</td>
+		</tr>
+		<tr>
+			<td>Cisco <br> Routing, DNS, DHCP</td>
+			<td>Linux <br> Fedora, Debian, Ubuntu</td>
+		</tr>
+		<tr>
+			<td>Perl, Rust</td>
+			<td>SQL, MySQL, Firebase</td>
+		</tr>
+		<tr>
+			<td>Game Engines & Frameworks <br> Unity, SDL, GameMaker</td>
+			<td>Game Engine Utilities <br> imgui, assimp, tracy, OpenGL</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	</p>
+-->
+
           </article>
         </section>
 
         <section class="animate space-y-6">
           <div class="flex flex-wrap items-center justify-between gap-y-2">
             <h2 class="font-semibold text-black dark:text-white">
-              Latest posts
+              Selected game projects
             </h2>
-            <Link href="/blog"> See all posts </Link>
+            <Link href="/projects#Games"> See all games </Link>
           </div>
           <ul class="not-prose flex flex-col gap-4">
             {
-              blog.map((post) => (
+              games.map((game) => (
                 <li>
-                  <ArrowCard entry={post} />
+                  <ArrowCard entry={game} />
                 </li>
               ))
             }
@@ -89,9 +116,9 @@ const projects: CollectionEntry<"projects">[] = (
         <section class="animate space-y-6">
           <div class="flex flex-wrap items-center justify-between gap-y-2">
             <h2 class="font-semibold text-black dark:text-white">
-              Recent projects
+              Selected projects
             </h2>
-            <Link href="/projects"> See all projects </Link>
+            <Link href="/projects#Projects"> See all projects </Link>
           </div>
           <ul class="not-prose flex flex-col gap-4">
             {
@@ -134,7 +161,7 @@ const projects: CollectionEntry<"projects">[] = (
                 href={`mailto:${SITE.EMAIL}`}
                 aria-label={`Email ${SITE.TITLE}`}
               >
-                {SITE.EMAIL}
+                Email
               </Link>
             </li>
           </ul>

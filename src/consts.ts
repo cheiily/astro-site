@@ -31,16 +31,20 @@ export const GAMES: Metadata = {
 };
 
 export const SOCIALS: Socials = [
-  {
-    NAME: "X (formerly Twitter)",
-    HREF: "https://twitter.com/boogerbuttcheeks",
-  },
+  // {
+  //   NAME: "X (formerly Twitter)",
+  //   HREF: "https://twitter.com/boogerbuttcheeks",
+  // },
   {
     NAME: "GitHub",
     HREF: "https://github.com/cheiily",
   },
   {
     NAME: "LinkedIn",
-    HREF: "https://www.linkedin.com/in/trevortylerlee",
+    HREF: "https://www.linkedin.com/in/grzegorz-ludziejewski/",
   },
+  {
+    NAME: "ItchIo",
+    HREF: "https://cheily.itch.io/"
+  }
 ];

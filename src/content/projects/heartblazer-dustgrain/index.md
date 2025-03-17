@@ -3,18 +3,18 @@ title: 'Heartblazer - DustGrain integration module'
 description: ""
 toc: true
 draft: true
-entry_type: "project"
+entry_type: "draft"
 status: "In Progress"
 order: 12
 ---
 
-## /links
+## Links
 
-## /motivation
+## Motivation
 
-## /technologies
+## Technologies
 
-## /implementation
+## Implementation
 
-## /conclusions
+## Conclusion
 

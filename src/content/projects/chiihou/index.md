@@ -1,33 +1,34 @@
 ---
-title: 'chiihou'
-status: "Upkeep"
-description: "Personal landing website made with Hugo"
-order: 1
+title: 'Chiihou'
+status: "Finished"
+description: "Personal landing website made with Astro."
+order: 2
 toc: true
 entry_type: "project"
 urls:
     - "/"
-    - "https://example.com"
+    - "https://github.com/cheiily/astro-site"
 url_names:
-    - demo
+    - home
     - repo
 ---
 
-## /motivation
-
-An idea of a personal landing/resume website has been going around my head for a while but the final push was seeing a befriended developer's small, personal blog built with Hugo. This introduced me to the whole concept of static website generators. \
-As a form of procrastination from uni work, first came the website's layout and much later the content.
-
-## /technologies
+## Technologies
 
 - Hugo
-- VPS
+- Astro
+- VPS (Raspberry Pi)
 
-## /implementation
+## Summary
 
-Hugo utilizes Go templates for (partial) layout specifications and allows for easy import of pre-defined themes.
-It offers a number of useful generation features such as archetypes, taxonomies, partials. It's really nice how you can import a theme and later override a specific part of it to match your own vision and needs.
+An idea of a personal landing/resume website had been going around my head for a while but the final push was seeing a befriended developer's small, personal blog built with Hugo. 
+This introduced me to the whole concept of static website generators. \
+As a form of procrastination from university work, first came the website's layout and much later the content.
 
-## /conclusions
+What you see now is the second iteration of the website. I decided that I didn't like the theme I chose previously after all and used the opportunity to move to Astro. 
+My familiarity with static content generators definitely came in handy, and I was able to customize the template much faster than previously.
 
-This website has proven a nice break for my mind during the extremely busy time of the last autumn-winter semester, while also a place for organizing my projects and a piece of self-presentation. I'm rather content with how it worked out but with time I came to dislike the theme i chose more and more, so maybe I'll change it some time soon...?
+Initially, working on this website had proven to be a nice mental break during the extremely busy time of my 5th semester.
+It remains a great place to organize deeper insight and personal remarks towards projects, as well as a piece of self-presentation.
+I'm also way more content with how this version turned out and don't see any major changes to the template too soon. Maybe except for the ToC, I think it should be pinned on a side panel...
+

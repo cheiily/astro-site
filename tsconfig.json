@@ -1,9 +1,9 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"],
+  "exclude": ["dist", "src/content/blog", "src/pages/blog"],
   "compilerOptions": {
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "baseUrl": ".",
     "paths": {
       "@*": ["./src/*"]
