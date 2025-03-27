@@ -7,8 +7,12 @@ status: "Finalized"
 order: 8
 urls:
     - https://bubble-bliss-games.itch.io/scrub-squad
+    - https://github.com/ReasonPsycho/Srub-Squad-ZTGK-submission
+    - https://reasonpsycho.github.io/Srub-Squad-ZTGK-submission/
 url_names:
     - itch
+    - repo
+    - page
 ---
 
 ## Technologies
