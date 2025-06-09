@@ -3,6 +3,6 @@
     "draft": false,
     "posttime": "2025-06-09T01:46:00+02:00",
     "validdays": 5,
-    "content": "This is a test notification!",
-    "header": "If for some reason you see this, feel free to ignore it."
+    "header": "This is a test notification!",
+    "content": "If for some reason you see this, feel free to ignore it."
 }
