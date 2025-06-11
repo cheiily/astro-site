@@ -2,6 +2,7 @@
     "version": 1,
     "id": 2,
     "draft": false,
+    "repeat": true,
     "posttime": "2025-06-09T01:46:00+02:00",
     "validdays": 5,
     "header": "This is a test notification!",
