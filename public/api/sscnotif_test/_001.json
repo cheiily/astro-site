@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "id" : 10001,
+    "draft": false,
+    "repeat": false,
+    "posttime": "2025-06-04T12:00:00+02:00",
+    "validdays": -1,
+    "header": "1",
+    "content": "draft: no, repeat: no, valid: -1, button: yes",
+    "button": {
+        "text": "Join",
+        "url": "https://discord.gg/YFEJppd6BC"
+    }
+}
